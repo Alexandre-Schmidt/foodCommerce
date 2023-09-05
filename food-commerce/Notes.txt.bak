@@ -1,0 +1,32 @@
+- React
+- React-router-dom
+- React-toastify
+- axios
+- TypeScript
+- Styled Components + themes
+- Hooks
+- Contexts
+- Integração com pagamentos
+- Nodejs
+
+bibliotecas
+
+react-icons
+polished (manipular cores)
+axios (faz chamadas http para um endpoint (acessa um endereço url e retorna as informações tratadas))
+json-Server
+  npm i json-server --save-desevolvimento
+  simula em ambiente de desevolvimento
+  para executar npm run json-server
+  coloca os endpoint no db.json
+React-toastify (janelinha de notificação)
+  npm i react-toastify
+  (lembrar de incluir o container do toastify no app)
+React Hook Form (validação de formulario)
+  npm i react-hook-form
+Yup (schema(uma estrutura de dados) faz a validação dos dados)
+  npm i @hookform/resolvers yup
+React-imask (mascara para os formularios)
+  npm i react-imask
+  npm i @brazilian-utils/brazilian-utils
+  npm i card-validator

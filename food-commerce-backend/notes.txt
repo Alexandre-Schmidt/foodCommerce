@@ -1,0 +1,60 @@
+---------------Configurações
+npm init -y
+npm i -D @types/node nodemon rimraf ts-node typescript 
+npx tsc --init
+npx tsc (para executar a build a primeira vez)
+node ./build/index.js (para testar)
+
+no tsconfig.json:
+ "outDir": "./build",
+
+no package.jon:
+  "scripts": {
+      "build": "rimraf ./build && tsc",
+      "dev": "nodemon",
+      "start": "tsc-node build && node build/index.js"
+    }
+
+criar o arquivo nodemon.json
+
+para executar:
+  npm run build 
+  npm run dev (fica monitorando as alterações)
+  npm run start
+
+npm i dotenv express
+npm i -D @types/express
+
+Insomnia: sistema externo que conecta no servirdor. Trabalha com APIs (rest Client)
+  https://insomnia.rest/download (dowloand do programa) 
+
+Docker: ele serve para hospedar/executar o sistema da banco de dados e toda parte estrutural 
+  criar o arquivo docker-compose.yml
+  https://www.docker.com/products/docker-desktop/ fazer o dowloand do programa e instalar
+  docker-compose up -d
+  http://localhost:8000/login?next=%2F
+
+prisma (ORM - para conectar no banco de dados) 
+  ORM (é uma camada que vc adiciona entre o Software e o banco)
+  npm i -D prisma
+  npx prisma init
+  para subir para p banco de dados 
+    npm run prisma migrate dev
+  adiciona no package.json
+    "db:seed": "prisma db seed"
+    "seed": "ts-node prisma/seeds.ts"
+
+Axios (faz as chamadas de API)
+  npm i axios
+
+CORS (faz a liberação do back)
+  npm i cors
+  npm i @types/cors
+
+  
+---- conceitos
+
+get para index, show
+post para store
+put para update
+delete para destroy 
