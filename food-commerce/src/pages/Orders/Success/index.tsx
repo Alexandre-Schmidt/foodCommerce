@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import { Button } from '../../../components/EmptyCart/styles'
 
 import { Head } from '../../../components/Head'
 
@@ -21,13 +22,14 @@ export default function OrderSuccessPage() {
         <SubTitle>Dados de Contato da Loja</SubTitle>
 
         <ul>
-          <li>Endereço: Av Central, 123</li>
-          <li>Tel: 11 98412-4578</li>
+          <li>Endereço: Av José da Silva, 45</li>
+          <li>Tel: 51 98512-4574</li>
         </ul>
 
         <br />
-        <a href='/'>Voltar para a página inicial</a>
+
       </Inner>
+      <Button to='/' className='button'>página inicial</Button>
     </Container>
   )
 }

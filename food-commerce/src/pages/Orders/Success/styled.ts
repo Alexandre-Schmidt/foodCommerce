@@ -5,6 +5,11 @@ export const Container = styled.div`
   max-width: 58.75rem;
   padding: 2rem;
   margin: 0 auto;
+
+  .button {
+    text-align: center;
+    margin: 0 auto;
+  }
 `
 
 export const Inner = styled.main`
@@ -12,6 +17,12 @@ export const Inner = styled.main`
   padding: 2rem 2.5rem;
   border-radius: 8px;
   text-align: center;
+
+  p {
+    color: ${({ theme }) => theme.colors.primary};
+    margin: 2rem 0;
+  }
+
 `
 
 export const Title = styled.h1``

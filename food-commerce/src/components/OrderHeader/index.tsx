@@ -4,7 +4,7 @@ import { useCart } from '../../hooks/useCart'
 
 import { Container } from './styles'
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo1.png'
 import { ReactComponent as CartIcon } from '../../assets/shopping-cart.svg'
 
 export function OrderHeader() {
